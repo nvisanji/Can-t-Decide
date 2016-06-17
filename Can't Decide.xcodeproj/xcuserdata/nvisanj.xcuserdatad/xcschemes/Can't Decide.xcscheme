@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DE5F6CDB1D1327BE007A1CAE"
+               BuildableName = "Can&apos;t Decide.app"
+               BlueprintName = "Can&apos;t Decide"
+               ReferencedContainer = "container:Can&apos;t Decide.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DE5F6CEF1D1327BE007A1CAE"
+               BuildableName = "Can&apos;t DecideTests.xctest"
+               BlueprintName = "Can&apos;t DecideTests"
+               ReferencedContainer = "container:Can&apos;t Decide.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DE5F6CFA1D1327BE007A1CAE"
+               BuildableName = "Can&apos;t DecideUITests.xctest"
+               BlueprintName = "Can&apos;t DecideUITests"
+               ReferencedContainer = "container:Can&apos;t Decide.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "DE5F6CDB1D1327BE007A1CAE"
+            BuildableName = "Can&apos;t Decide.app"
+            BlueprintName = "Can&apos;t Decide"
+            ReferencedContainer = "container:Can&apos;t Decide.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "DE5F6CDB1D1327BE007A1CAE"
+            BuildableName = "Can&apos;t Decide.app"
+            BlueprintName = "Can&apos;t Decide"
+            ReferencedContainer = "container:Can&apos;t Decide.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "DE5F6CDB1D1327BE007A1CAE"
+            BuildableName = "Can&apos;t Decide.app"
+            BlueprintName = "Can&apos;t Decide"
+            ReferencedContainer = "container:Can&apos;t Decide.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FEFC9BB1D137B5100711FAE /* MainKB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEFC9BA1D137B5100711FAE /* MainKB.storyboard */; };
 		DE5F6CE01D1327BE007A1CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6CDF1D1327BE007A1CAE /* AppDelegate.swift */; };
 		DE5F6CE21D1327BE007A1CAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6CE11D1327BE007A1CAE /* ViewController.swift */; };
 		DE5F6CE51D1327BE007A1CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5F6CE31D1327BE007A1CAE /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3FEFC9BA1D137B5100711FAE /* MainKB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainKB.storyboard; sourceTree = "<group>"; };
 		DE5F6CDC1D1327BE007A1CAE /* Can't Decide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Can't Decide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5F6CDF1D1327BE007A1CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE5F6CE11D1327BE007A1CAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				DE5F6CDF1D1327BE007A1CAE /* AppDelegate.swift */,
 				DE5F6CE11D1327BE007A1CAE /* ViewController.swift */,
 				DE5F6CE31D1327BE007A1CAE /* Main.storyboard */,
+				3FEFC9BA1D137B5100711FAE /* MainKB.storyboard */,
 				DE5F6CE61D1327BE007A1CAE /* Assets.xcassets */,
 				DE5F6CE81D1327BE007A1CAE /* LaunchScreen.storyboard */,
 				DE5F6CEB1D1327BE007A1CAE /* Info.plist */,
@@ -231,6 +234,7 @@
 			files = (
 				DE5F6CEA1D1327BE007A1CAE /* LaunchScreen.storyboard in Resources */,
 				DE5F6CE71D1327BE007A1CAE /* Assets.xcassets in Resources */,
+				3FEFC9BB1D137B5100711FAE /* MainKB.storyboard in Resources */,
 				DE5F6CE51D1327BE007A1CAE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +486,7 @@
 				DE5F6D061D1327BE007A1CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE5F6D071D1327BE007A1CAE /* Build configuration list for PBXNativeTarget "Can't DecideTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				DE5F6D091D1327BE007A1CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE5F6D0A1D1327BE007A1CAE /* Build configuration list for PBXNativeTarget "Can't DecideUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				DE5F6D0C1D1327BE007A1CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

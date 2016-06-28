@@ -8,6 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		3FEFC9BB1D137B5100711FAE /* MainKB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEFC9BA1D137B5100711FAE /* MainKB.storyboard */; };
+		DE01B3B91D1A08200043CF7D /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01B3B81D1A08200043CF7D /* ChooseViewController.swift */; };
+		DE01D04F1D1D9E85005189EC /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01D04E1D1D9E85005189EC /* ContentViewController.swift */; };
+		DE01D0511D1DF308005189EC /* Content2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01D0501D1DF308005189EC /* Content2ViewController.swift */; };
+		DE01D0521D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3BB1D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Bold.ttf */; };
+		DE01D0531D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk Hairline Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3BC1D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Hairline Italic.ttf */; };
+		DE01D0541D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk Light Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3BD1D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Light Italic.ttf */; };
+		DE01D0551D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3BE1D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Light.ttf */; };
+		DE01D0561D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3BF1D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Medium.ttf */; };
+		DE01D0571D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk Thin Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3C01D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Thin Italic.ttf */; };
+		DE01D0581D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3C11D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Thin.ttf */; };
+		DE01D0591D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3C21D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk.ttf */; };
+		DE01D05A1D1DFA68005189EC /* TypeTogether - Bree Serif Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3C31D1A156B0043CF7D /* TypeTogether - Bree Serif Bold.otf */; };
+		DE01D05B1D1DFA68005189EC /* TypeTogether - Bree Serif Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3C41D1A156B0043CF7D /* TypeTogether - Bree Serif Light.otf */; };
+		DE01D05C1D1DFA68005189EC /* TypeTogether - Bree Serif Th Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3C51D1A156B0043CF7D /* TypeTogether - Bree Serif Th Italic.otf */; };
+		DE01D05D1D1DFA68005189EC /* TypeTogether - Bree Serif Th.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3C61D1A156B0043CF7D /* TypeTogether - Bree Serif Th.otf */; };
+		DE01D05E1D1DFA68005189EC /* TypeTogether - Bree Serif.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3C71D1A156B0043CF7D /* TypeTogether - Bree Serif.otf */; };
+		DE01D05F1D1DFA68005189EC /* TypeTogether - BreeSerif-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3C81D1A156B0043CF7D /* TypeTogether - BreeSerif-BoldItalic.otf */; };
+		DE01D0601D1DFA68005189EC /* TypeTogether - BreeSerif-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3C91D1A156B0043CF7D /* TypeTogether - BreeSerif-Italic.otf */; };
+		DE01D0611D1DFA68005189EC /* TypeTogether - BreeSerifEb-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3CA1D1A156B0043CF7D /* TypeTogether - BreeSerifEb-Italic.otf */; };
+		DE01D0621D1DFA68005189EC /* TypeTogether - BreeSerifEb.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3CB1D1A156B0043CF7D /* TypeTogether - BreeSerifEb.otf */; };
+		DE01D0631D1DFA68005189EC /* TypeTogether - BreeSerifLt-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3CC1D1A156B0043CF7D /* TypeTogether - BreeSerifLt-Italic.otf */; };
+		DE01D0641D1DFA68005189EC /* TypeTogether - BreeSerifSb-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3CD1D1A156B0043CF7D /* TypeTogether - BreeSerifSb-Italic.otf */; };
+		DE01D0651D1DFA68005189EC /* TypeTogether - BreeSerifSb.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3CE1D1A156B0043CF7D /* TypeTogether - BreeSerifSb.otf */; };
 		DE5F6CE01D1327BE007A1CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6CDF1D1327BE007A1CAE /* AppDelegate.swift */; };
 		DE5F6CE21D1327BE007A1CAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6CE11D1327BE007A1CAE /* ViewController.swift */; };
 		DE5F6CE51D1327BE007A1CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5F6CE31D1327BE007A1CAE /* Main.storyboard */; };
@@ -36,6 +59,29 @@
 
 /* Begin PBXFileReference section */
 		3FEFC9BA1D137B5100711FAE /* MainKB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainKB.storyboard; sourceTree = "<group>"; };
+		DE01B3B81D1A08200043CF7D /* ChooseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseViewController.swift; sourceTree = "<group>"; };
+		DE01B3BB1D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dalton Maag - Aktiv Grotesk Bold.ttf"; sourceTree = "<group>"; };
+		DE01B3BC1D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Hairline Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dalton Maag - Aktiv Grotesk Hairline Italic.ttf"; sourceTree = "<group>"; };
+		DE01B3BD1D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Light Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dalton Maag - Aktiv Grotesk Light Italic.ttf"; sourceTree = "<group>"; };
+		DE01B3BE1D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dalton Maag - Aktiv Grotesk Light.ttf"; sourceTree = "<group>"; };
+		DE01B3BF1D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dalton Maag - Aktiv Grotesk Medium.ttf"; sourceTree = "<group>"; };
+		DE01B3C01D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Thin Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dalton Maag - Aktiv Grotesk Thin Italic.ttf"; sourceTree = "<group>"; };
+		DE01B3C11D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dalton Maag - Aktiv Grotesk Thin.ttf"; sourceTree = "<group>"; };
+		DE01B3C21D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dalton Maag - Aktiv Grotesk.ttf"; sourceTree = "<group>"; };
+		DE01B3C31D1A156B0043CF7D /* TypeTogether - Bree Serif Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypeTogether - Bree Serif Bold.otf"; sourceTree = "<group>"; };
+		DE01B3C41D1A156B0043CF7D /* TypeTogether - Bree Serif Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypeTogether - Bree Serif Light.otf"; sourceTree = "<group>"; };
+		DE01B3C51D1A156B0043CF7D /* TypeTogether - Bree Serif Th Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypeTogether - Bree Serif Th Italic.otf"; sourceTree = "<group>"; };
+		DE01B3C61D1A156B0043CF7D /* TypeTogether - Bree Serif Th.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypeTogether - Bree Serif Th.otf"; sourceTree = "<group>"; };
+		DE01B3C71D1A156B0043CF7D /* TypeTogether - Bree Serif.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypeTogether - Bree Serif.otf"; sourceTree = "<group>"; };
+		DE01B3C81D1A156B0043CF7D /* TypeTogether - BreeSerif-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypeTogether - BreeSerif-BoldItalic.otf"; sourceTree = "<group>"; };
+		DE01B3C91D1A156B0043CF7D /* TypeTogether - BreeSerif-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypeTogether - BreeSerif-Italic.otf"; sourceTree = "<group>"; };
+		DE01B3CA1D1A156B0043CF7D /* TypeTogether - BreeSerifEb-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypeTogether - BreeSerifEb-Italic.otf"; sourceTree = "<group>"; };
+		DE01B3CB1D1A156B0043CF7D /* TypeTogether - BreeSerifEb.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypeTogether - BreeSerifEb.otf"; sourceTree = "<group>"; };
+		DE01B3CC1D1A156B0043CF7D /* TypeTogether - BreeSerifLt-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypeTogether - BreeSerifLt-Italic.otf"; sourceTree = "<group>"; };
+		DE01B3CD1D1A156B0043CF7D /* TypeTogether - BreeSerifSb-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypeTogether - BreeSerifSb-Italic.otf"; sourceTree = "<group>"; };
+		DE01B3CE1D1A156B0043CF7D /* TypeTogether - BreeSerifSb.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypeTogether - BreeSerifSb.otf"; sourceTree = "<group>"; };
+		DE01D04E1D1D9E85005189EC /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentViewController.swift; path = ../ContentViewController.swift; sourceTree = "<group>"; };
+		DE01D0501D1DF308005189EC /* Content2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Content2ViewController.swift; sourceTree = "<group>"; };
 		DE5F6CDC1D1327BE007A1CAE /* Can't Decide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Can't Decide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5F6CDF1D1327BE007A1CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE5F6CE11D1327BE007A1CAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +122,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE01B3B71D1A07B90043CF7D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DE01D04E1D1D9E85005189EC /* ContentViewController.swift */,
+				DE01B3B81D1A08200043CF7D /* ChooseViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DE01B3BA1D1A14FD0043CF7D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DE01B3BB1D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Bold.ttf */,
+				DE01B3BC1D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Hairline Italic.ttf */,
+				DE01B3BD1D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Light Italic.ttf */,
+				DE01B3BE1D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Light.ttf */,
+				DE01B3BF1D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Medium.ttf */,
+				DE01B3C01D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Thin Italic.ttf */,
+				DE01B3C11D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Thin.ttf */,
+				DE01B3C21D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk.ttf */,
+				DE01B3C31D1A156B0043CF7D /* TypeTogether - Bree Serif Bold.otf */,
+				DE01B3C41D1A156B0043CF7D /* TypeTogether - Bree Serif Light.otf */,
+				DE01B3C51D1A156B0043CF7D /* TypeTogether - Bree Serif Th Italic.otf */,
+				DE01B3C61D1A156B0043CF7D /* TypeTogether - Bree Serif Th.otf */,
+				DE01B3C71D1A156B0043CF7D /* TypeTogether - Bree Serif.otf */,
+				DE01B3C81D1A156B0043CF7D /* TypeTogether - BreeSerif-BoldItalic.otf */,
+				DE01B3C91D1A156B0043CF7D /* TypeTogether - BreeSerif-Italic.otf */,
+				DE01B3CA1D1A156B0043CF7D /* TypeTogether - BreeSerifEb-Italic.otf */,
+				DE01B3CB1D1A156B0043CF7D /* TypeTogether - BreeSerifEb.otf */,
+				DE01B3CC1D1A156B0043CF7D /* TypeTogether - BreeSerifLt-Italic.otf */,
+				DE01B3CD1D1A156B0043CF7D /* TypeTogether - BreeSerifSb-Italic.otf */,
+				DE01B3CE1D1A156B0043CF7D /* TypeTogether - BreeSerifSb.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		DE5F6CD31D1327BE007A1CAE = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +181,12 @@
 		DE5F6CDE1D1327BE007A1CAE /* Can't Decide */ = {
 			isa = PBXGroup;
 			children = (
+				DE01B3BA1D1A14FD0043CF7D /* Fonts */,
+				DE01B3B71D1A07B90043CF7D /* View Controllers */,
 				DE5F6CDF1D1327BE007A1CAE /* AppDelegate.swift */,
 				DE5F6CE11D1327BE007A1CAE /* ViewController.swift */,
 				DE5F6CE31D1327BE007A1CAE /* Main.storyboard */,
+				DE01D0501D1DF308005189EC /* Content2ViewController.swift */,
 				3FEFC9BA1D137B5100711FAE /* MainKB.storyboard */,
 				DE5F6CE61D1327BE007A1CAE /* Assets.xcassets */,
 				DE5F6CE81D1327BE007A1CAE /* LaunchScreen.storyboard */,
@@ -232,6 +317,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE01D0521D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk Bold.ttf in Resources */,
+				DE01D0531D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk Hairline Italic.ttf in Resources */,
+				DE01D0541D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk Light Italic.ttf in Resources */,
+				DE01D0551D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk Light.ttf in Resources */,
+				DE01D0561D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk Medium.ttf in Resources */,
+				DE01D0571D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk Thin Italic.ttf in Resources */,
+				DE01D0581D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk Thin.ttf in Resources */,
+				DE01D0591D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk.ttf in Resources */,
+				DE01D05A1D1DFA68005189EC /* TypeTogether - Bree Serif Bold.otf in Resources */,
+				DE01D05B1D1DFA68005189EC /* TypeTogether - Bree Serif Light.otf in Resources */,
+				DE01D05C1D1DFA68005189EC /* TypeTogether - Bree Serif Th Italic.otf in Resources */,
+				DE01D05D1D1DFA68005189EC /* TypeTogether - Bree Serif Th.otf in Resources */,
+				DE01D05E1D1DFA68005189EC /* TypeTogether - Bree Serif.otf in Resources */,
+				DE01D05F1D1DFA68005189EC /* TypeTogether - BreeSerif-BoldItalic.otf in Resources */,
+				DE01D0601D1DFA68005189EC /* TypeTogether - BreeSerif-Italic.otf in Resources */,
+				DE01D0611D1DFA68005189EC /* TypeTogether - BreeSerifEb-Italic.otf in Resources */,
+				DE01D0621D1DFA68005189EC /* TypeTogether - BreeSerifEb.otf in Resources */,
+				DE01D0631D1DFA68005189EC /* TypeTogether - BreeSerifLt-Italic.otf in Resources */,
+				DE01D0641D1DFA68005189EC /* TypeTogether - BreeSerifSb-Italic.otf in Resources */,
+				DE01D0651D1DFA68005189EC /* TypeTogether - BreeSerifSb.otf in Resources */,
 				DE5F6CEA1D1327BE007A1CAE /* LaunchScreen.storyboard in Resources */,
 				DE5F6CE71D1327BE007A1CAE /* Assets.xcassets in Resources */,
 				3FEFC9BB1D137B5100711FAE /* MainKB.storyboard in Resources */,
@@ -260,8 +365,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE01D04F1D1D9E85005189EC /* ContentViewController.swift in Sources */,
 				DE5F6CE21D1327BE007A1CAE /* ViewController.swift in Sources */,
 				DE5F6CE01D1327BE007A1CAE /* AppDelegate.swift in Sources */,
+				DE01B3B91D1A08200043CF7D /* ChooseViewController.swift in Sources */,
+				DE01D0511D1DF308005189EC /* Content2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

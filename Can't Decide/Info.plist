@@ -36,5 +36,28 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Dalton Maag - Aktiv Grotesk Bold.ttf</string>
+		<string>Dalton Maag - Aktiv Grotesk Hairline Italic.ttf</string>
+		<string>Dalton Maag - Aktiv Grotesk Light Italic.ttf</string>
+		<string>Dalton Maag - Aktiv Grotesk Light.ttf</string>
+		<string>Dalton Maag - Aktiv Grotesk Medium.ttf</string>
+		<string>Dalton Maag - Aktiv Grotesk Thin Italic.ttf</string>
+		<string>Dalton Maag - Aktiv Grotesk Thin.ttf</string>
+		<string>Dalton Maag - Aktiv Grotesk.ttf</string>
+		<string>TypeTogether - Bree Serif Bold.otf</string>
+		<string>TypeTogether - Bree Serif Light.otf</string>
+		<string>TypeTogether - Bree Serif Th Italic.otf</string>
+		<string>TypeTogether - Bree Serif Th.otf</string>
+		<string>TypeTogether - Bree Serif.otf</string>
+		<string>TypeTogether - BreeSerif-BoldItalic.otf</string>
+		<string>TypeTogether - BreeSerif-Italic.otf</string>
+		<string>TypeTogether - BreeSerifEb-Italic.otf</string>
+		<string>TypeTogether - BreeSerifEb.otf</string>
+		<string>TypeTogether - BreeSerifLt-Italic.otf</string>
+		<string>TypeTogether - BreeSerifSb-Italic.otf</string>
+		<string>TypeTogether - BreeSerifSb.otf</string>
+	</array>
 </dict>
 </plist>

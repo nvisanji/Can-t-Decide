@@ -4,26 +4,246 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Dalton Maag - Aktiv Grotesk.ttf">
+            <string>AktivGrotesk-Regular</string>
+            <string>AktivGrotesk-Regular</string>
+            <string>AktivGrotesk-Regular</string>
+            <string>AktivGrotesk-Regular</string>
+            <string>AktivGrotesk-Regular</string>
+        </mutableArray>
+        <mutableArray key="TypeTogether - Bree Serif.otf">
+            <string>BreeSerif</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Choose View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="chooseOne" id="BYZ-38-t0r" customClass="ViewController" customModule="Can_t_Decide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chooseOne" id="BYZ-38-t0r" customClass="ChooseViewController" customModule="Can_t_Decide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="01 - choose" id="AYx-Xc-S5U">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Dinner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ri0-b4-LRi">
+                                <rect key="frame" x="66" y="32" width="189" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BreeSerif" family="Bree Serif" pointSize="28"/>
+                                <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="A0a-lZ-OnT">
+                                <rect key="frame" x="0.0" y="331" width="320" height="237"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SR4-WN-toW">
+                                        <rect key="frame" x="170" y="33" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="45_minutes"/>
+                                        <state key="selected" image="45_minutes_selected"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="v7G-wC-rhD">
+                                        <rect key="frame" x="250" y="33" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="60_minutes"/>
+                                        <state key="selected" image="60_minutes_selected"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VH3-QS-4P8">
+                                        <rect key="frame" x="10" y="105" width="300" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.44705882352941179" green="0.72941176470588232" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AktivGrotesk-Regular" family="Aktiv Grotesk" pointSize="20"/>
+                                        <state key="normal" title="Decide for me">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapDecide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WYM-83-Dxw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VlJ-hr-5Wb">
+                                        <rect key="frame" x="90" y="33" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="30_minutes"/>
+                                        <state key="selected" image="30_minutes_selected"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="h5s-D3-E6z">
+                                        <rect key="frame" x="10" y="171" width="300" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="AktivGrotesk-Regular" family="Aktiv Grotesk" pointSize="20"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="0.38039215686274508" green="0.68627450980392157" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NDc-xw-b5J">
+                                        <rect key="frame" x="10" y="33" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="15_minutes"/>
+                                        <state key="selected" image="15_minutes_selected"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much time do you have? (minutes)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qfn-8k-egP">
+                                        <rect key="frame" x="10" y="0.0" width="301" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AktivGrotesk-Regular" family="Aktiv Grotesk" pointSize="16"/>
+                                        <color key="textColor" red="0.22352941176470589" green="0.22352941176470589" blue="0.22352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Spaghetti" id="9i8-bs-U9E">
+                                <rect key="frame" x="20" y="109" width="93" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="H3g-zV-HRB" appends="YES" id="1LN-45-xb6"/>
+                                    <outletCollection property="gestureRecognizers" destination="5Ie-bZ-z6Z" appends="YES" id="TfP-E3-D3o"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" image="Turkey" id="aO4-wd-CjQ">
+                                <rect key="frame" x="207" y="133" width="93" height="88"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="jNE-CH-Jgc" appends="YES" id="RIp-1V-7XW"/>
+                                    <outletCollection property="gestureRecognizers" destination="XuS-Bi-h5R" appends="YES" id="QrB-Lp-Qxi"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="4" contentMode="center" image="Gyoza" id="IYd-Th-WK1">
+                                <rect key="frame" x="26" y="210" width="93" height="88"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="MSD-QI-DH2" appends="YES" id="HH6-a7-L0k"/>
+                                    <outletCollection property="gestureRecognizers" destination="1FU-WT-ol1" appends="YES" id="1iA-Ck-eiS"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="center" image="Chicken" id="0WB-rB-x9A">
+                                <rect key="frame" x="127" y="188" width="93" height="88"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="6yV-2b-ecM" appends="YES" id="AiC-ku-pFp"/>
+                                    <outletCollection property="gestureRecognizers" destination="tbO-cy-KES" appends="YES" id="Tfq-Id-L5W"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" image="Eggs" id="Gk3-xq-D6c">
+                                <rect key="frame" x="127" y="92" width="93" height="88"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ccr-CY-6X6" appends="YES" id="TmB-wx-pEB"/>
+                                    <outletCollection property="gestureRecognizers" destination="uZk-hr-i7T" appends="YES" id="OA8-8I-gRY"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonHolderView" destination="A0a-lZ-OnT" id="8M3-WW-wBh"/>
+                        <outlet property="cancelButton" destination="h5s-D3-E6z" id="634-xb-apB"/>
+                        <outlet property="chickenImageView" destination="0WB-rB-x9A" id="FQ4-rv-vjh"/>
+                        <outlet property="eggsImageView" destination="Gk3-xq-D6c" id="kp4-Mu-b5F"/>
+                        <outlet property="gyozaImageView" destination="IYd-Th-WK1" id="HYd-mq-np4"/>
+                        <outlet property="spaImageView" destination="9i8-bs-U9E" id="ei4-gK-qzc"/>
+                        <outlet property="turkeyImageView" destination="aO4-wd-CjQ" id="ZO9-Zc-wht"/>
+                        <segue destination="Uh3-fZ-42E" kind="modal" identifier="contentSegue" id="zQM-ec-7CN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="H3g-zV-HRB">
+                    <connections>
+                        <action selector="didPanCircle:" destination="BYZ-38-t0r" id="wpM-rk-gqj"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ccr-CY-6X6">
+                    <connections>
+                        <action selector="didPanCircle:" destination="BYZ-38-t0r" id="hBA-a2-ySG"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="jNE-CH-Jgc">
+                    <connections>
+                        <action selector="didPanCircle:" destination="BYZ-38-t0r" id="Koq-PZ-KAd"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="6yV-2b-ecM">
+                    <connections>
+                        <action selector="didPanCircle:" destination="BYZ-38-t0r" id="ZtH-8Q-Q1g"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="MSD-QI-DH2">
+                    <connections>
+                        <action selector="didPanCircle:" destination="BYZ-38-t0r" id="dMU-r5-AbJ"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="5Ie-bZ-z6Z">
+                    <connections>
+                        <action selector="didTapContent:" destination="BYZ-38-t0r" id="Isk-V4-13s"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="uZk-hr-i7T">
+                    <connections>
+                        <action selector="didTapContent:" destination="BYZ-38-t0r" id="yLy-X1-RVY"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="XuS-Bi-h5R">
+                    <connections>
+                        <action selector="didTapContent:" destination="BYZ-38-t0r" id="hlB-JU-Rtd"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="tbO-cy-KES">
+                    <connections>
+                        <action selector="didTapContent:" destination="BYZ-38-t0r" id="zWD-2S-snY"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="1FU-WT-ol1">
+                    <connections>
+                        <action selector="didTapContent:" destination="BYZ-38-t0r" id="hXV-cA-f9y"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="162.66666666666666" y="406.59333333333331"/>
+            <point key="canvasLocation" x="167" y="406"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="whR-17-PKN">
+            <objects>
+                <viewController id="Uh3-fZ-42E" customClass="ContentViewController" customModule="Can_t_Decide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zIX-NY-7O8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j6d-0O-AmQ">
+                                <rect key="frame" x="269" y="20" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AktivGrotesk-Regular" family="Aktiv Grotesk" pointSize="16"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" red="0.3843137254901961" green="0.69019607843137254" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapClose:" destination="Uh3-fZ-42E" eventType="touchUpInside" id="NRZ-Cd-Tf1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zd7-eH-VjQ">
+                                <rect key="frame" x="8" y="24" width="253" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AktivGrotesk-Regular" family="Aktiv Grotesk" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Xjv-hr-bZj">
+                                <rect key="frame" x="0.0" y="58" width="320" height="510"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="Zd7-eH-VjQ" id="88Y-hU-xtL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eaL-k6-36r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592" y="406"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eaQ-MK-rMo">
@@ -43,27 +263,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0yk-3B-dpN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="535" y="397"/>
+            <point key="canvasLocation" x="951" y="-403"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Vg6-XJ-JwT">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="flO-ec-FW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="chooseLayer" id="Im4-TY-44e" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yCR-eo-pz8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="02 - choose - start" id="BtJ-Ta-zQT">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Chicken" id="ubt-ZX-dda">
+                                <rect key="frame" x="116" y="116" width="93" height="88"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Gyoza" id="Qyx-cY-UZL">
+                                <rect key="frame" x="176" y="308" width="93" height="88"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Spaghetti" id="ZgC-hW-RHo">
+                                <rect key="frame" x="60" y="308" width="93" height="88"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Eggs" id="hjM-aw-fxF">
+                                <rect key="frame" x="20" y="200" width="93" height="88"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Turkey" id="2MV-7q-6mk">
+                                <rect key="frame" x="207" y="200" width="93" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="flO-ec-FW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919" y="397"/>
+            <point key="canvasLocation" x="413" y="-319"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="e3a-3n-yg7">
@@ -83,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gIE-qf-CnK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919" y="1099"/>
+            <point key="canvasLocation" x="551" y="1677"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ukW-1O-UQQ">
@@ -103,7 +339,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IFP-4f-Z1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1708" y="397"/>
+            <point key="canvasLocation" x="2031" y="-403"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tas-Ky-ALt">
@@ -123,7 +359,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CV6-si-cjd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1708" y="1099"/>
+            <point key="canvasLocation" x="904" y="1677"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="LgS-eC-qRf">
@@ -143,7 +379,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8jH-VW-gvG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1306" y="397"/>
+            <point key="canvasLocation" x="1685" y="-403"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4BH-Rr-gcm">
@@ -163,17 +399,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LAz-dq-hFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="1099"/>
+            <point key="canvasLocation" x="-279" y="1289"/>
         </scene>
     </scenes>
     <resources>
-        <image name="01 - choose" width="320" height="568"/>
         <image name="01 - plan" width="320" height="568"/>
         <image name="02 - choose - details" width="320" height="568"/>
-        <image name="02 - choose - start" width="320" height="568"/>
         <image name="02 - plan - start" width="320" height="568"/>
         <image name="03 - choose - animation" width="320" height="568"/>
         <image name="04 - choose - selection" width="320" height="568"/>
         <image name="04 - plan - selection" width="320" height="568"/>
+        <image name="15_minutes" width="60" height="60"/>
+        <image name="15_minutes_selected" width="60" height="60"/>
+        <image name="30_minutes" width="60" height="60"/>
+        <image name="30_minutes_selected" width="60" height="60"/>
+        <image name="45_minutes" width="60" height="60"/>
+        <image name="45_minutes_selected" width="60" height="60"/>
+        <image name="60_minutes" width="60" height="60"/>
+        <image name="60_minutes_selected" width="60" height="60"/>
+        <image name="Chicken" width="93" height="88"/>
+        <image name="Eggs" width="93" height="88"/>
+        <image name="Gyoza" width="93" height="88"/>
+        <image name="Spaghetti" width="93" height="88"/>
+        <image name="Turkey" width="93" height="88"/>
     </resources>
 </document>

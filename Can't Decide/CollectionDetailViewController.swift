@@ -12,12 +12,12 @@ class CollectionDetailViewController: UIViewController, UITableViewDataSource, U
     
     @IBOutlet weak var collectionLabelCD: UILabel!
     @IBOutlet weak var descripLabelCD: UILabel!
-
+    
     //view for adding 1st item
     @IBOutlet weak var addView: UIView!
     //view for adding 2+ items
     @IBOutlet weak var addMore: UIView!
-
+    
     @IBOutlet weak var addItem: UIButton!
     @IBOutlet weak var editButton: UIButton!
     
@@ -32,30 +32,30 @@ class CollectionDetailViewController: UIViewController, UITableViewDataSource, U
     
     //check what button pressed
     var buttonPressed: String!
-
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //displaying collection information
         collectionLabelCD.text = collectionCD
         descripLabelCD.text = descripCD
-
-    
-        //set itemData array
-       // print(itemData.count)
-        itemData = []
-
-
-    
         
-
+        
+        //set itemData array
+        // print(itemData.count)
+        itemData = []
+        
+        
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-
+        
         //condition to show/hide the states of CollectionDetail
         if itemData.isEmpty == true{
             addView.hidden = false
@@ -64,7 +64,7 @@ class CollectionDetailViewController: UIViewController, UITableViewDataSource, U
             addView.hidden = true
             addMore.hidden = false
         }
-
+        
     }
     
     
@@ -77,7 +77,7 @@ class CollectionDetailViewController: UIViewController, UITableViewDataSource, U
         tableView.reloadData()
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -92,31 +92,31 @@ class CollectionDetailViewController: UIViewController, UITableViewDataSource, U
     }
     
     
-
+    
     
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         
         var addItemViewController = segue.destinationViewController as! AddItemViewController
         
-
+        
         addItemViewController.collectionDetailViewController = self
         
         print("edit segue")
         
-//        var editItemViewController = segue.destinationViewController as! EditCollectionViewController
-//        editItemViewController.collectionDetailViewController = self
+        //        var editItemViewController = segue.destinationViewController as! EditCollectionViewController
+        //        editItemViewController.collectionDetailViewController = self
         
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-
-
-
-
+    
+    
+    
+    
     @IBAction func backBtn(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
         
@@ -125,7 +125,7 @@ class CollectionDetailViewController: UIViewController, UITableViewDataSource, U
     //number of rows in table
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return itemData.count
-
+        
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -151,6 +151,7 @@ class CollectionDetailViewController: UIViewController, UITableViewDataSource, U
     func addToItemData(newItem: String){
         itemData.insert(newItem, atIndex: itemData.count)
     }
-
-
+    
+    
 }
+

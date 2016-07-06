@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F3A6C1E1D2DAD5E00492369 /* SampleCollectionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A6C1D1D2DAD5E00492369 /* SampleCollectionDetailViewController.swift */; };
+		3F3A6C201D2DAD7200492369 /* SampleCollectionDetailViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A6C1F1D2DAD7200492369 /* SampleCollectionDetailViewController2.swift */; };
+		3F3A6C221D2DAE7B00492369 /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3A6C211D2DAE7B00492369 /* TestStoryboard.storyboard */; };
+		3F3A6C241D2DAEA500492369 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A6C231D2DAEA500492369 /* TestViewController.swift */; };
 		3F5392891D233ECD00EBA4ED /* CollectionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5392881D233ECD00EBA4ED /* CollectionDetailViewController.swift */; };
 		3F5392931D2340EC00EBA4ED /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F53928A1D2340EC00EBA4ED /* AddItemViewController.swift */; };
 		3F5392951D2340EC00EBA4ED /* CollectionListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F53928C1D2340EC00EBA4ED /* CollectionListTableViewCell.swift */; };
@@ -67,6 +71,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F3A6C1D1D2DAD5E00492369 /* SampleCollectionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCollectionDetailViewController.swift; sourceTree = "<group>"; };
+		3F3A6C1F1D2DAD7200492369 /* SampleCollectionDetailViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCollectionDetailViewController2.swift; sourceTree = "<group>"; };
+		3F3A6C211D2DAE7B00492369 /* TestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestStoryboard.storyboard; sourceTree = "<group>"; };
+		3F3A6C231D2DAEA500492369 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		3F5392881D233ECD00EBA4ED /* CollectionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDetailViewController.swift; sourceTree = "<group>"; };
 		3F53928A1D2340EC00EBA4ED /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		3F53928C1D2340EC00EBA4ED /* CollectionListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionListTableViewCell.swift; sourceTree = "<group>"; };
@@ -143,11 +151,14 @@
 		DE01B3B71D1A07B90043CF7D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3F3A6C231D2DAEA500492369 /* TestViewController.swift */,
 				3F53929C1D23413500EBA4ED /* AddCollectionViewController.swift */,
 				3F53928A1D2340EC00EBA4ED /* AddItemViewController.swift */,
 				3F53928C1D2340EC00EBA4ED /* CollectionListTableViewCell.swift */,
 				3F53928D1D2340EC00EBA4ED /* CollectionListViewController.swift */,
 				3F53928E1D2340EC00EBA4ED /* EditCollectionViewController.swift */,
+				3F3A6C1D1D2DAD5E00492369 /* SampleCollectionDetailViewController.swift */,
+				3F3A6C1F1D2DAD7200492369 /* SampleCollectionDetailViewController2.swift */,
 				3F53928F1D2340EC00EBA4ED /* HomeViewController.swift */,
 				3F5392901D2340EC00EBA4ED /* ItemTableViewCell.swift */,
 				3F5392911D2340EC00EBA4ED /* ProtoTableViewCell.swift */,
@@ -215,6 +226,7 @@
 				DE5F6CE31D1327BE007A1CAE /* Main.storyboard */,
 				DE01D0501D1DF308005189EC /* Content2ViewController.swift */,
 				3FEFC9BA1D137B5100711FAE /* MainKB.storyboard */,
+				3F3A6C211D2DAE7B00492369 /* TestStoryboard.storyboard */,
 				DE5F6CE61D1327BE007A1CAE /* Assets.xcassets */,
 				DE5F6CE81D1327BE007A1CAE /* LaunchScreen.storyboard */,
 				DE5F6CEB1D1327BE007A1CAE /* Info.plist */,
@@ -363,6 +375,7 @@
 				DE01D0621D1DFA68005189EC /* TypeTogether - BreeSerifEb.otf in Resources */,
 				DE01D0631D1DFA68005189EC /* TypeTogether - BreeSerifLt-Italic.otf in Resources */,
 				DE01D0641D1DFA68005189EC /* TypeTogether - BreeSerifSb-Italic.otf in Resources */,
+				3F3A6C221D2DAE7B00492369 /* TestStoryboard.storyboard in Resources */,
 				DE01D0651D1DFA68005189EC /* TypeTogether - BreeSerifSb.otf in Resources */,
 				DE5F6CEA1D1327BE007A1CAE /* LaunchScreen.storyboard in Resources */,
 				DE5F6CE71D1327BE007A1CAE /* Assets.xcassets in Resources */,
@@ -394,12 +407,15 @@
 			files = (
 				3F53929D1D23413500EBA4ED /* AddCollectionViewController.swift in Sources */,
 				3F5392961D2340EC00EBA4ED /* CollectionListViewController.swift in Sources */,
+				3F3A6C241D2DAEA500492369 /* TestViewController.swift in Sources */,
 				DE5F6CE21D1327BE007A1CAE /* ViewController.swift in Sources */,
 				3F5392951D2340EC00EBA4ED /* CollectionListTableViewCell.swift in Sources */,
 				3F5392971D2340EC00EBA4ED /* EditCollectionViewController.swift in Sources */,
 				DE5F6CE01D1327BE007A1CAE /* AppDelegate.swift in Sources */,
 				3F5392991D2340EC00EBA4ED /* ItemTableViewCell.swift in Sources */,
 				DE01B3B91D1A08200043CF7D /* ChooseViewController.swift in Sources */,
+				3F3A6C201D2DAD7200492369 /* SampleCollectionDetailViewController2.swift in Sources */,
+				3F3A6C1E1D2DAD5E00492369 /* SampleCollectionDetailViewController.swift in Sources */,
 				3F53929A1D2340EC00EBA4ED /* ProtoTableViewCell.swift in Sources */,
 				3F5392931D2340EC00EBA4ED /* AddItemViewController.swift in Sources */,
 				DE01D0511D1DF308005189EC /* Content2ViewController.swift in Sources */,

@@ -15,6 +15,8 @@ class CollectionListViewController: UIViewController, UITableViewDataSource, UIT
     
     var collectionList: [String]!
     
+   // var sampleCollectionDetailViewController: SampleCollectionDetailViewController!
+    
     var sampleCollectionDetailViewController: SampleCollectionDetailViewController!
     
     override func viewDidLoad() {

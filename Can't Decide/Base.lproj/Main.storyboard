@@ -25,31 +25,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Dinner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ri0-b4-LRi">
-                                <rect key="frame" x="66" y="32" width="189" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BreeSerif" family="Bree Serif" pointSize="28"/>
-                                <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" id="A0a-lZ-OnT">
                                 <rect key="frame" x="0.0" y="331" width="320" height="237"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SR4-WN-toW">
-                                        <rect key="frame" x="170" y="33" width="60" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="45_minutes"/>
-                                        <state key="selected" image="45_minutes_selected"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="v7G-wC-rhD">
-                                        <rect key="frame" x="250" y="33" width="60" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="60_minutes"/>
-                                        <state key="selected" image="60_minutes_selected"/>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VH3-QS-4P8">
-                                        <rect key="frame" x="10" y="105" width="300" height="54"/>
+                                        <rect key="frame" x="10" y="95" width="300" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.44705882352941179" green="0.72941176470588232" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="AktivGrotesk-Regular" family="Aktiv Grotesk" pointSize="20"/>
@@ -60,14 +41,8 @@
                                             <action selector="didTapDecide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WYM-83-Dxw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VlJ-hr-5Wb">
-                                        <rect key="frame" x="90" y="33" width="60" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="30_minutes"/>
-                                        <state key="selected" image="30_minutes_selected"/>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="h5s-D3-E6z">
-                                        <rect key="frame" x="10" y="171" width="300" height="54"/>
+                                        <rect key="frame" x="10" y="161" width="300" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="AktivGrotesk-Regular" family="Aktiv Grotesk" pointSize="20"/>
@@ -75,19 +50,25 @@
                                             <color key="titleColor" red="0.38039215686274508" green="0.68627450980392157" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NDc-xw-b5J">
-                                        <rect key="frame" x="10" y="33" width="60" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="15_minutes"/>
-                                        <state key="selected" image="15_minutes_selected"/>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much time do you have? (minutes)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qfn-8k-egP">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much time do you have?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qfn-8k-egP">
                                         <rect key="frame" x="10" y="0.0" width="301" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AktivGrotesk-Regular" family="Aktiv Grotesk" pointSize="16"/>
                                         <color key="textColor" red="0.22352941176470589" green="0.22352941176470589" blue="0.22352941176470589" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" id="A7I-tv-QdJ">
+                                        <rect key="frame" x="10" y="29" width="97" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select time" textAlignment="natural" minimumFontSize="17" id="7Qg-YV-7VV">
+                                        <rect key="frame" x="10" y="33" width="300" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -136,6 +117,13 @@
                                     <outletCollection property="gestureRecognizers" destination="uZk-hr-i7T" appends="YES" id="OA8-8I-gRY"/>
                                 </connections>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Dinner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ri0-b4-LRi">
+                                <rect key="frame" x="66" y="32" width="189" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BreeSerif" family="Bree Serif" pointSize="28"/>
+                                <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -146,6 +134,7 @@
                         <outlet property="eggsImageView" destination="Gk3-xq-D6c" id="kp4-Mu-b5F"/>
                         <outlet property="gyozaImageView" destination="IYd-Th-WK1" id="HYd-mq-np4"/>
                         <outlet property="spaImageView" destination="9i8-bs-U9E" id="ei4-gK-qzc"/>
+                        <outlet property="textField" destination="7Qg-YV-7VV" id="0bV-uA-ICK"/>
                         <outlet property="turkeyImageView" destination="aO4-wd-CjQ" id="ZO9-Zc-wht"/>
                         <segue destination="Uh3-fZ-42E" kind="modal" identifier="contentSegue" id="zQM-ec-7CN"/>
                     </connections>
@@ -268,16 +257,11 @@
         <!--View Controller-->
         <scene sceneID="Vg6-XJ-JwT">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="flO-ec-FW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="chooseLayer" id="Im4-TY-44e" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yCR-eo-pz8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Chicken" id="ubt-ZX-dda">
-                                <rect key="frame" x="116" y="116" width="93" height="88"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Gyoza" id="Qyx-cY-UZL">
                                 <rect key="frame" x="176" y="308" width="93" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -294,10 +278,15 @@
                                 <rect key="frame" x="207" y="200" width="93" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Chicken" id="ubt-ZX-dda">
+                                <rect key="frame" x="114" y="200" width="93" height="88"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="flO-ec-FW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="413" y="-319"/>
         </scene>
@@ -409,14 +398,6 @@
         <image name="03 - choose - animation" width="320" height="568"/>
         <image name="04 - choose - selection" width="320" height="568"/>
         <image name="04 - plan - selection" width="320" height="568"/>
-        <image name="15_minutes" width="60" height="60"/>
-        <image name="15_minutes_selected" width="60" height="60"/>
-        <image name="30_minutes" width="60" height="60"/>
-        <image name="30_minutes_selected" width="60" height="60"/>
-        <image name="45_minutes" width="60" height="60"/>
-        <image name="45_minutes_selected" width="60" height="60"/>
-        <image name="60_minutes" width="60" height="60"/>
-        <image name="60_minutes_selected" width="60" height="60"/>
         <image name="Chicken" width="93" height="88"/>
         <image name="Eggs" width="93" height="88"/>
         <image name="Gyoza" width="93" height="88"/>

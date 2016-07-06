@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3F5392891D233ECD00EBA4ED /* CollectionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5392881D233ECD00EBA4ED /* CollectionDetailViewController.swift */; };
 		3F5392931D2340EC00EBA4ED /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F53928A1D2340EC00EBA4ED /* AddItemViewController.swift */; };
-		3F5392941D2340EC00EBA4ED /* CollectionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F53928B1D2340EC00EBA4ED /* CollectionDetailViewController.swift */; };
 		3F5392951D2340EC00EBA4ED /* CollectionListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F53928C1D2340EC00EBA4ED /* CollectionListTableViewCell.swift */; };
 		3F5392961D2340EC00EBA4ED /* CollectionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F53928D1D2340EC00EBA4ED /* CollectionListViewController.swift */; };
 		3F5392971D2340EC00EBA4ED /* EditCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F53928E1D2340EC00EBA4ED /* EditCollectionViewController.swift */; };
@@ -71,7 +70,6 @@
 /* Begin PBXFileReference section */
 		3F5392881D233ECD00EBA4ED /* CollectionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDetailViewController.swift; sourceTree = "<group>"; };
 		3F53928A1D2340EC00EBA4ED /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
-		3F53928B1D2340EC00EBA4ED /* CollectionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDetailViewController.swift; sourceTree = "<group>"; };
 		3F53928C1D2340EC00EBA4ED /* CollectionListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionListTableViewCell.swift; sourceTree = "<group>"; };
 		3F53928D1D2340EC00EBA4ED /* CollectionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionListViewController.swift; sourceTree = "<group>"; };
 		3F53928E1D2340EC00EBA4ED /* EditCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCollectionViewController.swift; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 			children = (
 				3F53929C1D23413500EBA4ED /* AddCollectionViewController.swift */,
 				3F53928A1D2340EC00EBA4ED /* AddItemViewController.swift */,
-				3F53928B1D2340EC00EBA4ED /* CollectionDetailViewController.swift */,
 				3F53928C1D2340EC00EBA4ED /* CollectionListTableViewCell.swift */,
 				3F53928D1D2340EC00EBA4ED /* CollectionListViewController.swift */,
 				3F53928E1D2340EC00EBA4ED /* EditCollectionViewController.swift */,
@@ -409,7 +406,6 @@
 				DE01B3B91D1A08200043CF7D /* ChooseViewController.swift in Sources */,
 				3F53929A1D2340EC00EBA4ED /* ProtoTableViewCell.swift in Sources */,
 				3F5392931D2340EC00EBA4ED /* AddItemViewController.swift in Sources */,
-				3F5392941D2340EC00EBA4ED /* CollectionDetailViewController.swift in Sources */,
 				DE01D0511D1DF308005189EC /* Content2ViewController.swift in Sources */,
 				3F5392891D233ECD00EBA4ED /* CollectionDetailViewController.swift in Sources */,
 				3F53929B1D2340EC00EBA4ED /* TableViewController.swift in Sources */,

@@ -188,7 +188,8 @@ class SampleCollectionDetailViewController: UIViewController, UITableViewDataSou
         
     }
     
-    @IBAction func chooseBtn(sender: AnyObject) {        performSegueWithIdentifier("testSegue", sender: self)
+    @IBAction func chooseBtn(sender: AnyObject) {        //performSegueWithIdentifier("testSegue", sender: self)
+        performSegueWithIdentifier("chooseSegue", sender: self)
     }
     
     @IBAction func backBtn(sender: AnyObject) {

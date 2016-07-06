@@ -938,7 +938,15 @@
                 <viewControllerPlaceholder storyboardIdentifier="testStoryboard" storyboardName="TestStoryboard" id="Gmr-iK-vj6" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mmx-KR-9pk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2736.5" y="-153"/>
+            <point key="canvasLocation" x="3260.5" y="-75"/>
+        </scene>
+        <!--chooseOne-->
+        <scene sceneID="q9F-rE-flb">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="chooseOne" storyboardName="Main" referencedIdentifier="chooseOne" id="XPi-aY-er3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LDg-EZ-eGq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3401" y="644"/>
         </scene>
         <!--Sample Collection Detail View Controller-->
         <scene sceneID="A8Y-Ie-58Q">
@@ -1056,7 +1064,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="chooseBtn:" destination="xk6-jp-GVr" eventType="touchUpInside" id="WW7-qR-Hye"/>
-                                                    <segue destination="Gmr-iK-vj6" kind="modal" identifier="testSegue" id="F6G-Sn-6c9"/>
+                                                    <segue destination="XPi-aY-er3" kind="modal" identifier="chooseSegue" id="m1f-nU-WmX"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1357,8 +1365,8 @@
         <image name="AddCatBtn2" width="54" height="53"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tpk-xa-qaC"/>
         <segue reference="Oz9-jl-u7U"/>
-        <segue reference="F6G-Sn-6c9"/>
+        <segue reference="qJi-qV-Ipq"/>
+        <segue reference="tpk-xa-qaC"/>
     </inferredMetricsTieBreakers>
 </document>

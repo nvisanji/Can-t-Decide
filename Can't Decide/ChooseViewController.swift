@@ -407,5 +407,8 @@ class ChooseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
     // end picker functions
     
+    @IBAction func didPressCancel(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
 }

@@ -31,6 +31,7 @@ class CollectionListViewController: UIViewController, UITableViewDataSource, UIT
         listTableCL.dataSource = self
         listTableCL.delegate = self
         listTableCL.reloadData()
+
         
         addBtnStyle(addCatBtn)
         
@@ -127,7 +128,6 @@ class CollectionListViewController: UIViewController, UITableViewDataSource, UIT
         
         //DELETE ACTION
         cell.deleteAction = { (cell) in
-            
             var selectedCell = self.listTableCL.indexPathForCell(cell)!.row
             
             //self.collectionList.removeAtIndex(selectedCell)

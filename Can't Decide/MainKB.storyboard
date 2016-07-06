@@ -173,7 +173,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yhg-4X-8Lt" id="Kdk-F5-J75" userLabel="View">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="91.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" id="p1u-Me-1GB" userLabel="ActionView">
@@ -262,7 +262,6 @@
                                                             </state>
                                                             <connections>
                                                                 <action selector="didTapAdd:" destination="yhg-4X-8Lt" eventType="touchUpInside" id="msC-IM-Plh"/>
-                                                                <segue destination="XPi-aY-er3" kind="modal" identifier="chooseSegueFromHome" id="VfC-qE-PKy"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -315,6 +314,7 @@
                         <segue destination="V4X-SN-kH8" kind="push" identifier="sampleSegueTwo" id="Vws-3A-qh2"/>
                         <segue destination="Gmr-iK-vj6" kind="modal" identifier="testSegueFromHome" id="qJi-qV-Ipq"/>
                         <segue destination="45P-iF-Wuz" kind="modal" identifier="dinnerPOCSegue" modalTransitionStyle="crossDissolve" id="tpk-xa-qaC"/>
+                        <segue destination="G7q-om-n5z" kind="modal" identifier="chooseSegueFromHome" modalTransitionStyle="crossDissolve" id="maz-2y-8fi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iT8-6O-eUG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -610,7 +610,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="320" height="67"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LdL-sk-3a2" id="mxF-ve-EVb">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wM6-gM-fRq">
@@ -937,7 +937,15 @@
                 <viewControllerPlaceholder storyboardIdentifier="chooseOne" storyboardName="Main" referencedIdentifier="chooseOne" id="XPi-aY-er3" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LDg-EZ-eGq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3024.5" y="499"/>
+            <point key="canvasLocation" x="3376.5" y="648"/>
+        </scene>
+        <!--chooseOne-->
+        <scene sceneID="rIe-uZ-8YI">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="chooseOne2" storyboardName="Main" referencedIdentifier="chooseOne" id="G7q-om-n5z" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jW5-rN-rlT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3025.5" y="461"/>
         </scene>
         <!--Sample Collection Detail View Controller-->
         <scene sceneID="A8Y-Ie-58Q">
@@ -978,7 +986,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="320" height="67"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UP3-wQ-AUb" id="HMA-h2-4f7">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zLr-yW-RLu">
@@ -1055,7 +1063,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="chooseBtn:" destination="xk6-jp-GVr" eventType="touchUpInside" id="WW7-qR-Hye"/>
-                                                    <segue destination="XPi-aY-er3" kind="modal" identifier="chooseSegue" id="m1f-nU-WmX"/>
+                                                    <segue destination="XPi-aY-er3" kind="modal" identifier="chooseSegue" modalTransitionStyle="crossDissolve" id="m1f-nU-WmX"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1356,9 +1364,8 @@
         <image name="AddCatBtn2" width="93" height="88"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Oz9-jl-u7U"/>
-        <segue reference="qJi-qV-Ipq"/>
         <segue reference="tpk-xa-qaC"/>
-        <segue reference="VfC-qE-PKy"/>
+        <segue reference="qJi-qV-Ipq"/>
+        <segue reference="Oz9-jl-u7U"/>
     </inferredMetricsTieBreakers>
 </document>

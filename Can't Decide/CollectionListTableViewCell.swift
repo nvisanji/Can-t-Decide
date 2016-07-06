@@ -14,6 +14,7 @@ class CollectionListTableViewCell: UITableViewCell {
     @IBOutlet weak var collectionNameLabel: UILabel!
     
     @IBOutlet weak var cellContentView: UIView!
+    
     @IBOutlet weak var actionView: UIView!
     
     @IBOutlet weak var deleteBtn: UIButton!
@@ -27,9 +28,11 @@ class CollectionListTableViewCell: UITableViewCell {
     var planAction: ((UITableViewCell) -> Void)?
     var deleteAction: ((UITableViewCell) -> Void)?
 
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+
         
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: "onPan:")
         cellContentView.addGestureRecognizer(panGestureRecognizer)

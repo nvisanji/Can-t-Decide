@@ -19,7 +19,6 @@
 		3F53929D1D23413500EBA4ED /* AddCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F53929C1D23413500EBA4ED /* AddCollectionViewController.swift */; };
 		3FEFC9BB1D137B5100711FAE /* MainKB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEFC9BA1D137B5100711FAE /* MainKB.storyboard */; };
 		DE01B3B91D1A08200043CF7D /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01B3B81D1A08200043CF7D /* ChooseViewController.swift */; };
-		DE01D04F1D1D9E85005189EC /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01D04E1D1D9E85005189EC /* ContentViewController.swift */; };
 		DE01D0511D1DF308005189EC /* Content2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01D0501D1DF308005189EC /* Content2ViewController.swift */; };
 		DE01D0521D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3BB1D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Bold.ttf */; };
 		DE01D0531D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk Hairline Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3BC1D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Hairline Italic.ttf */; };
@@ -100,7 +99,6 @@
 		DE01B3CC1D1A156B0043CF7D /* TypeTogether - BreeSerifLt-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypeTogether - BreeSerifLt-Italic.otf"; sourceTree = "<group>"; };
 		DE01B3CD1D1A156B0043CF7D /* TypeTogether - BreeSerifSb-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypeTogether - BreeSerifSb-Italic.otf"; sourceTree = "<group>"; };
 		DE01B3CE1D1A156B0043CF7D /* TypeTogether - BreeSerifSb.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypeTogether - BreeSerifSb.otf"; sourceTree = "<group>"; };
-		DE01D04E1D1D9E85005189EC /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentViewController.swift; path = ../ContentViewController.swift; sourceTree = "<group>"; };
 		DE01D0501D1DF308005189EC /* Content2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Content2ViewController.swift; sourceTree = "<group>"; };
 		DE5F6CDC1D1327BE007A1CAE /* Can't Decide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Can't Decide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5F6CDF1D1327BE007A1CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 				3F5392911D2340EC00EBA4ED /* ProtoTableViewCell.swift */,
 				3F5392921D2340EC00EBA4ED /* TableViewController.swift */,
 				3F5392881D233ECD00EBA4ED /* CollectionDetailViewController.swift */,
-				DE01D04E1D1D9E85005189EC /* ContentViewController.swift */,
 				DE01B3B81D1A08200043CF7D /* ChooseViewController.swift */,
 			);
 			name = "View Controllers";
@@ -397,7 +394,6 @@
 			files = (
 				3F53929D1D23413500EBA4ED /* AddCollectionViewController.swift in Sources */,
 				3F5392961D2340EC00EBA4ED /* CollectionListViewController.swift in Sources */,
-				DE01D04F1D1D9E85005189EC /* ContentViewController.swift in Sources */,
 				DE5F6CE21D1327BE007A1CAE /* ViewController.swift in Sources */,
 				3F5392951D2340EC00EBA4ED /* CollectionListTableViewCell.swift in Sources */,
 				3F5392971D2340EC00EBA4ED /* EditCollectionViewController.swift in Sources */,

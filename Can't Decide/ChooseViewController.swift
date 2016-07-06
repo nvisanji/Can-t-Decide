@@ -133,6 +133,7 @@ class ChooseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
     
     // Pass some data
+    /*
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         var destinationViewController = segue.destinationViewController as! ContentViewController
@@ -141,6 +142,7 @@ class ChooseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         destinationViewController.theCircleIndex = selectedCircleIndex
         
     }
+    */
     
     // Get the selected button for time. This will decide which circle to show after the selection animation.
     

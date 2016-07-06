@@ -173,7 +173,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yhg-4X-8Lt" id="Kdk-F5-J75" userLabel="View">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="91.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" id="p1u-Me-1GB" userLabel="ActionView">
@@ -262,6 +262,7 @@
                                                             </state>
                                                             <connections>
                                                                 <action selector="didTapAdd:" destination="yhg-4X-8Lt" eventType="touchUpInside" id="msC-IM-Plh"/>
+                                                                <segue destination="XPi-aY-er3" kind="modal" identifier="chooseSegueFromHome" id="VfC-qE-PKy"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -287,23 +288,12 @@
                                 <rect key="frame" x="0.0" y="481" width="320" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a new category" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YZ2-3N-42B">
-                                        <rect key="frame" x="117" y="12" width="153" height="67"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4kc-CZ-CFX">
+                                        <rect key="frame" x="50" y="24" width="220" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AktivGrotesk-Regular" family="Aktiv Grotesk" pointSize="16"/>
-                                        <color key="textColor" red="0.25098039215686274" green="0.61176470588235299" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="AddCatBtn2" id="Ozt-jH-yaI">
-                                        <rect key="frame" x="50" y="19" width="54" height="53"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4kc-CZ-CFX">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal">
-                                            <color key="titleColor" red="0.97669082340000002" green="0.98396289560000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Add a new category">
+                                            <color key="titleColor" red="0.25098039220000001" green="0.61176470589999998" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="KCe-iy-EP7" kind="modal" modalTransitionStyle="crossDissolve" id="Oz9-jl-u7U"/>
@@ -318,6 +308,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="gg7-zO-zsq"/>
                     <connections>
+                        <outlet property="addCatBtn" destination="4kc-CZ-CFX" id="eQ7-69-1OG"/>
                         <outlet property="appName" destination="8Na-XO-hXS" id="RnC-mw-tML"/>
                         <outlet property="listTableCL" destination="A8d-mh-H2F" id="vxv-yr-4B0"/>
                         <segue destination="xk6-jp-GVr" kind="push" identifier="sampleSegueOne" id="o6k-en-0ec"/>
@@ -930,7 +921,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wl5-5F-aAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2998" y="-307"/>
+            <point key="canvasLocation" x="2765" y="-345"/>
         </scene>
         <!--TestStoryboard-->
         <scene sceneID="tC6-lH-M4h">
@@ -938,7 +929,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="testStoryboard" storyboardName="TestStoryboard" id="Gmr-iK-vj6" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mmx-KR-9pk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3260.5" y="-75"/>
+            <point key="canvasLocation" x="3132.5" y="-125"/>
         </scene>
         <!--chooseOne-->
         <scene sceneID="q9F-rE-flb">
@@ -946,7 +937,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="chooseOne" storyboardName="Main" referencedIdentifier="chooseOne" id="XPi-aY-er3" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LDg-EZ-eGq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3401" y="644"/>
+            <point key="canvasLocation" x="3024.5" y="499"/>
         </scene>
         <!--Sample Collection Detail View Controller-->
         <scene sceneID="A8Y-Ie-58Q">
@@ -987,7 +978,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="320" height="67"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UP3-wQ-AUb" id="HMA-h2-4f7">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zLr-yW-RLu">
@@ -1204,7 +1195,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="320" height="67"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XpU-Ja-WmT" id="Tx9-ng-vTx">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IXk-aA-4XG">
@@ -1362,11 +1353,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AddCatBtn2" width="54" height="53"/>
+        <image name="AddCatBtn2" width="93" height="88"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Oz9-jl-u7U"/>
         <segue reference="qJi-qV-Ipq"/>
         <segue reference="tpk-xa-qaC"/>
+        <segue reference="VfC-qE-PKy"/>
     </inferredMetricsTieBreakers>
 </document>

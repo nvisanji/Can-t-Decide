@@ -13,6 +13,8 @@ class CollectionListViewController: UIViewController, UITableViewDataSource, UIT
     @IBOutlet weak var listTableCL: UITableView!
     @IBOutlet weak var appName: UILabel!
     
+    @IBOutlet var addCatBtn: UIButton!
+    
     var collectionList: [String]!
     
    // var sampleCollectionDetailViewController: SampleCollectionDetailViewController!
@@ -29,6 +31,8 @@ class CollectionListViewController: UIViewController, UITableViewDataSource, UIT
         listTableCL.dataSource = self
         listTableCL.delegate = self
         listTableCL.reloadData()
+        
+        addBtnStyle(addCatBtn)
         
     }
 
@@ -99,7 +103,8 @@ class CollectionListViewController: UIViewController, UITableViewDataSource, UIT
             
             if selectedCell == 0 {
                 //open choose for dinner
-                self.performSegueWithIdentifier("testSegueFromHome", sender: self)
+                //self.performSegueWithIdentifier("testSegueFromHome", sender: self)
+                self.performSegueWithIdentifier("chooseSegueFromHome", sender: self)
             } else {
                 //do nothing yet
             }
@@ -137,6 +142,15 @@ class CollectionListViewController: UIViewController, UITableViewDataSource, UIT
     //add item to itemData array
     func addToCollectionList(newItem: String){
         collectionList.insert(newItem, atIndex: collectionList.count)
+    }
+    
+    func addBtnStyle(addBtn: UIButton){
+        var borderColor : UIColor = UIColor(red: 76/255, green: 169/255, blue: 12/255, alpha: 1.0)
+        var btnColor: UIColor = UIColor(white: 1, alpha: 1)
+        addBtn.layer.borderWidth = 1.5
+        addBtn.layer.borderColor = borderColor.CGColor
+        addBtn.layer.backgroundColor = btnColor.CGColor
+        
     }
 
 

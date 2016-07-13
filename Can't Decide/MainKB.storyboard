@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="wsP-OK-Bpe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="wsP-OK-Bpe">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Dalton Maag - Aktiv Grotesk Light.ttf">
@@ -173,7 +173,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yhg-4X-8Lt" id="Kdk-F5-J75" userLabel="View">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="91.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" id="p1u-Me-1GB" userLabel="ActionView">
@@ -312,7 +312,7 @@
                         <outlet property="listTableCL" destination="A8d-mh-H2F" id="vxv-yr-4B0"/>
                         <segue destination="xk6-jp-GVr" kind="push" identifier="sampleSegueOne" id="o6k-en-0ec"/>
                         <segue destination="V4X-SN-kH8" kind="push" identifier="sampleSegueTwo" id="Vws-3A-qh2"/>
-                        <segue destination="Gmr-iK-vj6" kind="modal" identifier="testSegueFromHome" id="qJi-qV-Ipq"/>
+                        <segue destination="Gmr-iK-vj6" kind="modal" identifier="testSegueFromHome" modalTransitionStyle="crossDissolve" id="qJi-qV-Ipq"/>
                         <segue destination="45P-iF-Wuz" kind="modal" identifier="dinnerPOCSegue" modalTransitionStyle="crossDissolve" id="tpk-xa-qaC"/>
                         <segue destination="G7q-om-n5z" kind="modal" identifier="chooseSegueFromHome" modalTransitionStyle="crossDissolve" id="maz-2y-8fi"/>
                     </connections>
@@ -338,7 +338,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u2e-cO-XrF" id="vhO-l9-gq9">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vgo-YV-hZd">
@@ -387,7 +387,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hlT-tr-dcP">
                                 <rect key="frame" x="8" y="500" width="305" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.25098039220000001" green="0.61176470589999998" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.44705882352941173" green="0.72941176470588232" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" keyboardKey="YES"/>
                                 </accessibility>
@@ -473,7 +473,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uWp-BD-fgI">
                                 <rect key="frame" x="8" y="518" width="305" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.25098039220000001" green="0.61176470589999998" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.44705882352941173" green="0.72941176470588232" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AktivGrotesk-Regular" family="Aktiv Grotesk" pointSize="16"/>
                                 <color key="tintColor" red="0.25098039220000001" green="0.61176470589999998" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Update">
@@ -610,7 +610,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="320" height="67"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LdL-sk-3a2" id="mxF-ve-EVb">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wM6-gM-fRq">
@@ -660,7 +660,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2FN-15-4wy">
                                                 <rect key="frame" x="168" y="61" width="144" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.25098039220000001" green="0.61176470589999998" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.44705882352941173" green="0.72941176470588232" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AktivGrotesk-Regular" family="Aktiv Grotesk" pointSize="16"/>
                                                 <state key="normal" title="Choose 1">
                                                     <color key="titleColor" red="0.97669082340000002" green="0.98396289560000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -669,7 +669,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kf4-ea-JdG">
                                                 <rect key="frame" x="8" y="61" width="144" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.25098039220000001" green="0.61176470589999998" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.44705882352941173" green="0.72941176470588232" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AktivGrotesk-Regular" family="Aktiv Grotesk" pointSize="16"/>
                                                 <state key="normal" title="Plan">
                                                     <color key="titleColor" red="0.97669082340000002" green="0.98396289560000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -838,7 +838,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sNs-6W-uek">
                                 <rect key="frame" x="8" y="496" width="305" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.25098039220000001" green="0.61176470589999998" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.44705882352941173" green="0.72941176470588232" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" keyboardKey="YES"/>
                                 </accessibility>
@@ -986,7 +986,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="320" height="67"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UP3-wQ-AUb" id="HMA-h2-4f7">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zLr-yW-RLu">
@@ -1036,7 +1036,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NPX-Wj-OQp">
                                                 <rect key="frame" x="8" y="61" width="144" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.25098039220000001" green="0.61176470589999998" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.44705882352941173" green="0.72941176470588232" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AktivGrotesk-Regular" family="Aktiv Grotesk" pointSize="16"/>
                                                 <state key="normal" title="Plan">
                                                     <color key="titleColor" red="0.97669082340000002" green="0.98396289560000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1056,7 +1056,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Whq-O4-2Ml">
                                                 <rect key="frame" x="168" y="61" width="144" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.25098039220000001" green="0.61176470589999998" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.44705882352941173" green="0.72941176470588232" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AktivGrotesk-Regular" family="Aktiv Grotesk" pointSize="16"/>
                                                 <state key="normal" title="Choose 1">
                                                     <color key="titleColor" red="0.97669082340000002" green="0.98396289560000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1203,7 +1203,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="320" height="67"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XpU-Ja-WmT" id="Tx9-ng-vTx">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IXk-aA-4XG">
@@ -1253,7 +1253,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wb4-PH-lqt">
                                                 <rect key="frame" x="168" y="61" width="144" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.25098039220000001" green="0.61176470589999998" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.44705882352941173" green="0.72941176470588232" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AktivGrotesk-Regular" family="Aktiv Grotesk" pointSize="16"/>
                                                 <state key="normal" title="Choose 1">
                                                     <color key="titleColor" red="0.97669082340000002" green="0.98396289560000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1262,7 +1262,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Q4F-dF-F4D">
                                                 <rect key="frame" x="8" y="61" width="144" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.25098039220000001" green="0.61176470589999998" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.44705882352941173" green="0.72941176470588232" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AktivGrotesk-Regular" family="Aktiv Grotesk" pointSize="16"/>
                                                 <state key="normal" title="Plan">
                                                     <color key="titleColor" red="0.97669082340000002" green="0.98396289560000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1364,8 +1364,8 @@
         <image name="AddCatBtn2" width="93" height="88"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tpk-xa-qaC"/>
-        <segue reference="qJi-qV-Ipq"/>
         <segue reference="Oz9-jl-u7U"/>
+        <segue reference="qJi-qV-Ipq"/>
+        <segue reference="ISQ-py-Cqn"/>
     </inferredMetricsTieBreakers>
 </document>

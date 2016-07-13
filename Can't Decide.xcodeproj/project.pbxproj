@@ -23,7 +23,6 @@
 		3F53929D1D23413500EBA4ED /* AddCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F53929C1D23413500EBA4ED /* AddCollectionViewController.swift */; };
 		3FEFC9BB1D137B5100711FAE /* MainKB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEFC9BA1D137B5100711FAE /* MainKB.storyboard */; };
 		DE01B3B91D1A08200043CF7D /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01B3B81D1A08200043CF7D /* ChooseViewController.swift */; };
-		DE01D0511D1DF308005189EC /* Content2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01D0501D1DF308005189EC /* Content2ViewController.swift */; };
 		DE01D0521D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3BB1D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Bold.ttf */; };
 		DE01D0531D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk Hairline Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3BC1D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Hairline Italic.ttf */; };
 		DE01D0541D1DFA68005189EC /* Dalton Maag - Aktiv Grotesk Light Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3BD1D1A15540043CF7D /* Dalton Maag - Aktiv Grotesk Light Italic.ttf */; };
@@ -44,6 +43,7 @@
 		DE01D0631D1DFA68005189EC /* TypeTogether - BreeSerifLt-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3CC1D1A156B0043CF7D /* TypeTogether - BreeSerifLt-Italic.otf */; };
 		DE01D0641D1DFA68005189EC /* TypeTogether - BreeSerifSb-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3CD1D1A156B0043CF7D /* TypeTogether - BreeSerifSb-Italic.otf */; };
 		DE01D0651D1DFA68005189EC /* TypeTogether - BreeSerifSb.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE01B3CE1D1A156B0043CF7D /* TypeTogether - BreeSerifSb.otf */; };
+		DE21A9541D35A81B0065B98E /* ChooseContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE21A9531D35A81B0065B98E /* ChooseContentViewController.swift */; };
 		DE5F6CE01D1327BE007A1CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6CDF1D1327BE007A1CAE /* AppDelegate.swift */; };
 		DE5F6CE21D1327BE007A1CAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6CE11D1327BE007A1CAE /* ViewController.swift */; };
 		DE5F6CE51D1327BE007A1CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5F6CE31D1327BE007A1CAE /* Main.storyboard */; };
@@ -51,6 +51,8 @@
 		DE5F6CEA1D1327BE007A1CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5F6CE81D1327BE007A1CAE /* LaunchScreen.storyboard */; };
 		DE5F6CF51D1327BE007A1CAE /* Can_t_DecideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6CF41D1327BE007A1CAE /* Can_t_DecideTests.swift */; };
 		DE5F6D001D1327BE007A1CAE /* Can_t_DecideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6CFF1D1327BE007A1CAE /* Can_t_DecideUITests.swift */; };
+		DE9925591D36A8AD00BB6DD5 /* PlanContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9925581D36A8AD00BB6DD5 /* PlanContentViewController.swift */; };
+		DEA703001D35E0F1000E05FE /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA702FF1D35E0F1000E05FE /* PlanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,7 +109,7 @@
 		DE01B3CC1D1A156B0043CF7D /* TypeTogether - BreeSerifLt-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypeTogether - BreeSerifLt-Italic.otf"; sourceTree = "<group>"; };
 		DE01B3CD1D1A156B0043CF7D /* TypeTogether - BreeSerifSb-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypeTogether - BreeSerifSb-Italic.otf"; sourceTree = "<group>"; };
 		DE01B3CE1D1A156B0043CF7D /* TypeTogether - BreeSerifSb.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypeTogether - BreeSerifSb.otf"; sourceTree = "<group>"; };
-		DE01D0501D1DF308005189EC /* Content2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Content2ViewController.swift; sourceTree = "<group>"; };
+		DE21A9531D35A81B0065B98E /* ChooseContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseContentViewController.swift; sourceTree = "<group>"; };
 		DE5F6CDC1D1327BE007A1CAE /* Can't Decide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Can't Decide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5F6CDF1D1327BE007A1CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE5F6CE11D1327BE007A1CAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,8 @@
 		DE5F6CFB1D1327BE007A1CAE /* Can't DecideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Can't DecideUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5F6CFF1D1327BE007A1CAE /* Can_t_DecideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Can_t_DecideUITests.swift; sourceTree = "<group>"; };
 		DE5F6D011D1327BE007A1CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE9925581D36A8AD00BB6DD5 /* PlanContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanContentViewController.swift; sourceTree = "<group>"; };
+		DEA702FF1D35E0F1000E05FE /* PlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,9 @@
 				3F5392921D2340EC00EBA4ED /* TableViewController.swift */,
 				3F5392881D233ECD00EBA4ED /* CollectionDetailViewController.swift */,
 				DE01B3B81D1A08200043CF7D /* ChooseViewController.swift */,
+				DE9925581D36A8AD00BB6DD5 /* PlanContentViewController.swift */,
+				DE21A9531D35A81B0065B98E /* ChooseContentViewController.swift */,
+				DEA702FF1D35E0F1000E05FE /* PlanViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -224,7 +231,6 @@
 				DE5F6CDF1D1327BE007A1CAE /* AppDelegate.swift */,
 				DE5F6CE11D1327BE007A1CAE /* ViewController.swift */,
 				DE5F6CE31D1327BE007A1CAE /* Main.storyboard */,
-				DE01D0501D1DF308005189EC /* Content2ViewController.swift */,
 				3FEFC9BA1D137B5100711FAE /* MainKB.storyboard */,
 				3F3A6C211D2DAE7B00492369 /* TestStoryboard.storyboard */,
 				DE5F6CE61D1327BE007A1CAE /* Assets.xcassets */,
@@ -409,19 +415,21 @@
 				3F5392961D2340EC00EBA4ED /* CollectionListViewController.swift in Sources */,
 				3F3A6C241D2DAEA500492369 /* TestViewController.swift in Sources */,
 				DE5F6CE21D1327BE007A1CAE /* ViewController.swift in Sources */,
+				DE21A9541D35A81B0065B98E /* ChooseContentViewController.swift in Sources */,
 				3F5392951D2340EC00EBA4ED /* CollectionListTableViewCell.swift in Sources */,
 				3F5392971D2340EC00EBA4ED /* EditCollectionViewController.swift in Sources */,
 				DE5F6CE01D1327BE007A1CAE /* AppDelegate.swift in Sources */,
 				3F5392991D2340EC00EBA4ED /* ItemTableViewCell.swift in Sources */,
+				DE9925591D36A8AD00BB6DD5 /* PlanContentViewController.swift in Sources */,
 				DE01B3B91D1A08200043CF7D /* ChooseViewController.swift in Sources */,
 				3F3A6C201D2DAD7200492369 /* SampleCollectionDetailViewController2.swift in Sources */,
 				3F3A6C1E1D2DAD5E00492369 /* SampleCollectionDetailViewController.swift in Sources */,
 				3F53929A1D2340EC00EBA4ED /* ProtoTableViewCell.swift in Sources */,
 				3F5392931D2340EC00EBA4ED /* AddItemViewController.swift in Sources */,
-				DE01D0511D1DF308005189EC /* Content2ViewController.swift in Sources */,
 				3F5392891D233ECD00EBA4ED /* CollectionDetailViewController.swift in Sources */,
 				3F53929B1D2340EC00EBA4ED /* TableViewController.swift in Sources */,
 				3F5392981D2340EC00EBA4ED /* HomeViewController.swift in Sources */,
+				DEA703001D35E0F1000E05FE /* PlanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

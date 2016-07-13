@@ -16,19 +16,26 @@ class ChooseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     @IBOutlet weak var chickenImageView: UIImageView!
     @IBOutlet weak var turkeyImageView: UIImageView!
     @IBOutlet weak var buttonHolderView: UIView!
+    @IBOutlet weak var decidedView: UIView!
     
     @IBOutlet weak var textField: UITextField!
     
     @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet weak var imDoneButton: UIButton!
+    @IBOutlet weak var chooseAgain: UIButton!
     
     var selectedImageView: UIImageView!
     var circleOriginalCenter: CGPoint!
+    var decidedOrigin: CGFloat!
+    var buttonHolderOrigin: CGFloat!
+    var spaOriginalCenter: CGPoint!
+    var eggsOriginalCenter: CGPoint!
+    var gyozaOriginalCenter: CGPoint!
+    var chickenOriginalCenter: CGPoint!
+    var turkeyOriginalCenter: CGPoint!
     
     //variable to keep track of the circle that was selected
     var selectedCircleIndex: Int = 0
-    
-    //variable to keep track of the time that was selected
-    var selectedTimeIndex: Int = 0
     
     //animation duration variable
     var circleDuration: NSTimeInterval!
@@ -39,16 +46,28 @@ class ChooseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //set the originals
+        buttonHolderOrigin = buttonHolderView.frame.origin.y
+        decidedOrigin = decidedView.frame.origin.y + 250
+        spaOriginalCenter = spaImageView.center
+        eggsOriginalCenter = eggsImageView.center
+        gyozaOriginalCenter = gyozaImageView.center
+        chickenOriginalCenter = chickenImageView.center
+        turkeyOriginalCenter = turkeyImageView.center
 
-        // Set the cancel button border color (can only so this programatically
+        // Set the cancel and choose again button border colors (can only so this programatically
         cancelButton.layer.borderColor = UIColor(red: 114/255, green: 186/255, blue: 69/255, alpha: 1.0).CGColor
+        cancelButton.layer.borderWidth = 1
+        chooseAgain.layer.borderColor = UIColor(red: 114/255, green: 186/255, blue: 69/255, alpha: 1.0).CGColor
+        chooseAgain.layer.borderWidth = 1
         
         fieldStyle(textField)
         
         // start picker
         let headerView = UIView()
         headerView.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: 40)
-        headerView.backgroundColor = UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1)
+        headerView.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.1)
         
         let button = UIButton(type: .System)
         button.frame = CGRect(x: headerView.frame.size.width - 80, y: 0, width: 100, height: 30)
@@ -58,20 +77,28 @@ class ChooseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         headerView.addSubview(button)
         
         // set the picker
-        var pickerView = UIPickerView()
+        let pickerView = UIPickerView()
+        pickerView.frame.origin.y += headerView.frame.size.height
         pickerView.delegate = self
-        textField.inputView = pickerView
+        pickerView.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.1)
+        pickerView.frame = CGRect(x: 0, y: 40, width: view.frame.size.width, height: 175)
+        print(pickerView.frame)
         
         let containerView = UIView()
+        
         containerView.frame = CGRect(x: 0, y: 0, width: pickerView.frame.size.width, height: pickerView.frame.size.height + headerView.frame.size.height)
         containerView.addSubview(headerView)
         containerView.addSubview(pickerView)
+        containerView.backgroundColor = UIColor(white: 1, alpha: 0.1)
         
+        //pickerTextField.inputView = pickerView
+        textField.inputView = containerView
         
-        //textField.inputView = containerView
-        textField.inputView = pickerView
-        
+        view.endEditing(false)
         // end the picker
+        
+        //place the decided view out of the way
+        decidedView.frame.origin.y = decidedOrigin
         
         
     }
@@ -81,11 +108,6 @@ class ChooseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         // Dispose of any resources that can be recreated.
     }
     
-    func onDoneButton(sender:UIButton!) {
-        
-        print("Button tapped")
-        
-    }
     
     @IBAction func didPanCircle(sender: UIPanGestureRecognizer) {
         
@@ -133,18 +155,14 @@ class ChooseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
     
     // Pass some data
-    /*
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        var destinationViewController = segue.destinationViewController as! ContentViewController
+        var destinationViewController = segue.destinationViewController as! ChooseContentViewController
         
         // send the proper index value to the content view controller based on the circle that was selected
         destinationViewController.theCircleIndex = selectedCircleIndex
         
     }
-    */
-    
-    // Get the selected button for time. This will decide which circle to show after the selection animation.
     
     // Trigger the selection animation on tap of "decide for me"
     @IBAction func didTapDecide(sender: AnyObject) {
@@ -186,7 +204,7 @@ class ChooseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         circleBreak += 1
         
         // condition to break out of the circular animation
-        if circleBreak == 4 {
+        if circleBreak == 3 {
             
             chosen()
             
@@ -335,19 +353,10 @@ class ChooseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
                     
                 }
                 
-                // create the choose again button programatically
                 
+                // bring in the decided ui view with the buttons
+                self.decidedView.frame.origin.y = self.buttonHolderOrigin
                 
-                //create the done button programatically
-                //let doneButton   = UIButton.buttonWithType(UIButtonType.System) as UIButton!
-                let doneButton = UIButton(type: .System)
-                let borderColor : UIColor = UIColor(red: 0.6, green: 0.6, blue: 0.6, alpha: 1.0)
-                doneButton.frame = CGRectMake(8, 300, 300, 40)
-                doneButton.layer.borderColor = borderColor.CGColor
-                //doneButton.backgroundColor = UIColor.greenColor()
-                doneButton.setTitle("I'm done", forState: UIControlState.Normal)
-                doneButton.addTarget(self, action: "goToDefault", forControlEvents: UIControlEvents.TouchUpInside)
-                self.view.addSubview(doneButton)
                 
                 
             }, completion: { (Bool) -> Void in
@@ -364,13 +373,57 @@ class ChooseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
             dispatch_get_main_queue(), closure)
     }
     
+    // user taps on i'm done
+    @IBAction func didTapDone(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     
-    // function to be called when the cancel button is clicked or the user clicks on choose again in the selected state
-    func goToDefault() {
+    // user taps choose again - sets everything back to the origin
+    @IBAction func didTapChooseAgain(sender: AnyObject) {
         
-        print("cancelling")
+        UIView.animateWithDuration(1.0, delay: 0,
+            options:[] , animations: { () -> Void in
+                
+                self.buttonHolderView.frame.origin.y = self.buttonHolderOrigin
+                self.decidedView.frame.origin.y = self.decidedOrigin
+                
+                self.spaImageView.center = self.spaOriginalCenter
+                self.spaImageView.alpha = 1.0
+                if self.textField.text == "50 minutes" {
+                    self.spaImageView.transform = CGAffineTransformScale(self.spaImageView.transform, 0.65, 0.65)
+                }
+                
+                self.eggsImageView.center = self.eggsOriginalCenter
+                self.eggsImageView.alpha = 1.0
+                if self.textField.text == "15 minutes" {
+                    self.eggsImageView.transform = CGAffineTransformScale(self.eggsImageView.transform, 0.65, 0.65)
+                }
+                
+                self.gyozaImageView.center = self.gyozaOriginalCenter
+                self.gyozaImageView.alpha = 1.0
+                if self.textField.text == "30 minutes" {
+                    self.gyozaImageView.transform = CGAffineTransformScale(self.gyozaImageView.transform, 0.65, 0.65)
+                }
+                
+                self.chickenImageView.center = self.chickenOriginalCenter
+                self.chickenImageView.alpha = 1.0
+                if self.textField.text == "60 minutes" {
+                    self.chickenImageView.transform = CGAffineTransformScale(self.chickenImageView.transform, 0.65, 0.65)
+                }
+                
+                self.turkeyImageView.center = self.turkeyOriginalCenter
+                self.turkeyImageView.alpha = 1.0
+                if self.textField.text == "45 minutes" {
+                    self.turkeyImageView.transform = CGAffineTransformScale(self.turkeyImageView.transform, 0.65, 0.65)
+                }
+                
+            }, completion: { (Bool) -> Void in
+        })
+        
+        circleBreak = 0
         
     }
+    
     
     
     // functions to stye the text box
@@ -403,12 +456,15 @@ class ChooseViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         textField.text = pickOption[row]
-        self.view.endEditing(true)
+        //self.view.endEditing(true)
     }
+    
+    func onDoneButton() { self.view.endEditing(true) }
     // end picker functions
     
     @IBAction func didPressCancel(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
 
 }

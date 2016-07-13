@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Dalton Maag - Aktiv Grotesk.ttf">
+            <string>AktivGrotesk-Regular</string>
+            <string>AktivGrotesk-Regular</string>
+            <string>AktivGrotesk-Regular</string>
+            <string>AktivGrotesk-Regular</string>
             <string>AktivGrotesk-Regular</string>
             <string>AktivGrotesk-Regular</string>
             <string>AktivGrotesk-Regular</string>
@@ -73,6 +77,36 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <view contentMode="scaleToFill" id="G7H-OZ-pzI">
+                                <rect key="frame" x="0.0" y="331" width="320" height="237"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sgp-UK-mC8">
+                                        <rect key="frame" x="10" y="16" width="300" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.44705882352941173" green="0.72941176470588232" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AktivGrotesk-Regular" family="Aktiv Grotesk" pointSize="20"/>
+                                        <state key="normal" title="I'm done">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapDone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3rD-sq-9es"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="omI-eS-uoh">
+                                        <rect key="frame" x="10" y="86" width="300" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AktivGrotesk-Regular" family="Aktiv Grotesk" pointSize="20"/>
+                                        <state key="normal" title="Choose again">
+                                            <color key="titleColor" red="0.44705882352941173" green="0.72941176470588232" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapChooseAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XCJ-kh-A0q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Spaghetti" id="9i8-bs-U9E">
                                 <rect key="frame" x="20" y="109" width="93" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -132,11 +166,15 @@
                         <outlet property="buttonHolderView" destination="A0a-lZ-OnT" id="8M3-WW-wBh"/>
                         <outlet property="cancelButton" destination="h5s-D3-E6z" id="634-xb-apB"/>
                         <outlet property="chickenImageView" destination="0WB-rB-x9A" id="FQ4-rv-vjh"/>
+                        <outlet property="chooseAgain" destination="omI-eS-uoh" id="OM5-Sl-AAC"/>
+                        <outlet property="decidedView" destination="G7H-OZ-pzI" id="xo3-X9-Y9A"/>
                         <outlet property="eggsImageView" destination="Gk3-xq-D6c" id="kp4-Mu-b5F"/>
                         <outlet property="gyozaImageView" destination="IYd-Th-WK1" id="HYd-mq-np4"/>
+                        <outlet property="imDoneButton" destination="sgp-UK-mC8" id="MbI-TY-CXg"/>
                         <outlet property="spaImageView" destination="9i8-bs-U9E" id="ei4-gK-qzc"/>
                         <outlet property="textField" destination="7Qg-YV-7VV" id="0bV-uA-ICK"/>
                         <outlet property="turkeyImageView" destination="aO4-wd-CjQ" id="ZO9-Zc-wht"/>
+                        <segue destination="OX8-eI-l6V" kind="modal" identifier="contentSegue" id="SAw-yT-Ezj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -193,174 +231,93 @@
             </objects>
             <point key="canvasLocation" x="167" y="406"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="eaQ-MK-rMo">
+        <!--Choose Content View Controller-->
+        <scene sceneID="IAn-x5-bCd">
             <objects>
-                <viewController storyboardIdentifier="collectionDetails" id="YIt-Io-LGo" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TFD-zY-qDs">
+                <viewController id="OX8-eI-l6V" customClass="ChooseContentViewController" customModule="Can_t_Decide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="buG-aB-QgH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="02 - choose - details" id="2QZ-7d-Wje">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" id="Fm8-gV-WeT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="V2g-2D-bNk">
+                                        <rect key="frame" x="8" y="23" width="193" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AktivGrotesk-Regular" family="Aktiv Grotesk" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ffF-a3-LsA">
+                                        <rect key="frame" x="266" y="19" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AktivGrotesk-Regular" family="Aktiv Grotesk" pointSize="16"/>
+                                        <state key="normal" title="Close">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapClose:" destination="OX8-eI-l6V" eventType="touchUpInside" id="B7l-8B-yoX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.44705882352941173" green="0.72941176470588232" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="wmN-J7-16D">
+                                <rect key="frame" x="0.0" y="67" width="320" height="501"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" image="Spaghetti_r" id="FPw-34-aF0">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" image="Eggs_r" id="oPV-Ss-mOF">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="384"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" image="Turkey_r" id="B81-nS-sBG">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="368"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" image="Chicken_r" id="O8B-C6-f1P">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="432"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" image="Gyoza_r" id="eLG-uk-DT6">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="672"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="chickenrImageView" destination="O8B-C6-f1P" id="4Fk-aR-Hrq"/>
+                        <outlet property="contentScrollView" destination="wmN-J7-16D" id="e7e-Ej-xND"/>
+                        <outlet property="eggrImageView" destination="oPV-Ss-mOF" id="3vn-6N-Mdj"/>
+                        <outlet property="gyozarImageView" destination="eLG-uk-DT6" id="Crb-IZ-vQ2"/>
+                        <outlet property="sparImageView" destination="FPw-34-aF0" id="kiF-gj-ewd"/>
+                        <outlet property="titleLabel" destination="V2g-2D-bNk" id="Ve9-eO-0TK"/>
+                        <outlet property="turkeyrImageView" destination="B81-nS-sBG" id="T22-Ps-tJz"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0yk-3B-dpN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Sk-6H-j3T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="951" y="-403"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Vg6-XJ-JwT">
-            <objects>
-                <viewController storyboardIdentifier="chooseLayer" id="Im4-TY-44e" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="yCR-eo-pz8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Gyoza" id="Qyx-cY-UZL">
-                                <rect key="frame" x="176" y="308" width="93" height="88"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Spaghetti" id="ZgC-hW-RHo">
-                                <rect key="frame" x="60" y="308" width="93" height="88"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Eggs" id="hjM-aw-fxF">
-                                <rect key="frame" x="20" y="200" width="93" height="88"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Turkey" id="2MV-7q-6mk">
-                                <rect key="frame" x="207" y="200" width="93" height="88"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Chicken" id="ubt-ZX-dda">
-                                <rect key="frame" x="114" y="200" width="93" height="88"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="flO-ec-FW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="413" y="-319"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="e3a-3n-yg7">
-            <objects>
-                <viewController storyboardIdentifier="planningLayer" id="DZc-mk-XjQ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wQB-5F-2fy">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="02 - plan - start" id="PLv-Vm-4IB">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gIE-qf-CnK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="551" y="1677"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="ukW-1O-UQQ">
-            <objects>
-                <viewController storyboardIdentifier="choiceMade" id="Ume-Kd-BSL" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="99l-ek-jXw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="04 - choose - selection" id="BEm-g5-3ze">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IFP-4f-Z1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2031" y="-403"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="tas-Ky-ALt">
-            <objects>
-                <viewController storyboardIdentifier="planComplete" id="8i1-ff-t3p" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ibx-JH-3mB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="04 - plan - selection" id="0wL-q5-ctx">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CV6-si-cjd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="904" y="1677"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="LgS-eC-qRf">
-            <objects>
-                <viewController storyboardIdentifier="selectingAnimation" id="0IF-ah-aqF" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VKX-4B-eZd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="03 - choose - animation" id="KHk-FW-svV">
-                                <rect key="frame" x="-1" y="-3" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8jH-VW-gvG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1685" y="-403"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="4BH-Rr-gcm">
-            <objects>
-                <viewController storyboardIdentifier="planOne" id="Bq1-lP-GJN" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xxH-VG-CNX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="01 - plan" id="pTb-MO-uxK">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LAz-dq-hFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-279" y="1289"/>
+            <point key="canvasLocation" x="644" y="406"/>
         </scene>
     </scenes>
     <resources>
-        <image name="01 - plan" width="320" height="568"/>
-        <image name="02 - choose - details" width="320" height="568"/>
-        <image name="02 - plan - start" width="320" height="568"/>
-        <image name="03 - choose - animation" width="320" height="568"/>
-        <image name="04 - choose - selection" width="320" height="568"/>
-        <image name="04 - plan - selection" width="320" height="568"/>
         <image name="Chicken" width="93" height="88"/>
+        <image name="Chicken_r" width="320" height="432"/>
         <image name="Eggs" width="93" height="88"/>
+        <image name="Eggs_r" width="320" height="384"/>
         <image name="Gyoza" width="93" height="88"/>
+        <image name="Gyoza_r" width="320" height="672"/>
         <image name="Spaghetti" width="93" height="88"/>
+        <image name="Spaghetti_r" width="320" height="528"/>
         <image name="Turkey" width="93" height="88"/>
+        <image name="Turkey_r" width="320" height="368"/>
     </resources>
 </document>
